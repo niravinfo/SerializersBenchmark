@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+
+option csharp_namespace = "SerializersBenchmark.ProtobufModels";
+
+message TestPayload {
+  int32 id = 1;
+  string name = 2;
+  bool is_active = 3;
+  double score = 4;
+  string created_at = 5;
+  google.protobuf.StringValue description = 6;
+  google.protobuf.Int32Value age = 7;
+  google.protobuf.DoubleValue rating = 8;
+  repeated string tags = 9;
+  repeated string categories = 10;
+  Address address = 11;
+}
+
+message Address {
+  string street = 1;
+  string city = 2;
+  string zip_code = 3;
+}
