@@ -14,7 +14,7 @@ using GooglePayloadList = SerializersBenchmark.ProtobufModels.TestPayloadList;
 namespace SerializersBenchmark;
 
 [MemoryDiagnoser]
-[SimpleJob]
+[ShortRunJob]
 [GroupBenchmarksBy(BenchmarkLogicalGroupRule.ByCategory, BenchmarkLogicalGroupRule.ByParams)]
 public class SerializerBenchmarks
 {
