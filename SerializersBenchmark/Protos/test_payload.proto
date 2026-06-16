@@ -23,3 +23,7 @@ message Address {
   string city = 2;
   string zip_code = 3;
 }
+
+message TestPayloadList {
+  repeated TestPayload items = 1;
+}
